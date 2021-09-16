@@ -7,7 +7,26 @@ body {
 * {
   /* border: 1px rgb(146, 125, 125) solid; */
   /* text-align: center; */
-  color: red;
+ 
+  font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif
+}
+
+.text-color1 {
+    color: rgb(34, 32, 32);
+}
+
+.text-color2 {
+    color:rgb(190, 176, 176);
+}
+
+.text-color3 {
+    color:rgb(235, 225, 225);
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
 }
 
 /* HEADER */
@@ -86,32 +105,98 @@ main {
 
 .content_main_card {
     border-bottom: rgb(88, 86, 86) 2px solid;
-
     margin: 20px 30px;
-
     display: flex;
     flex: 1;
     flex-direction: column;
-
 }
 
+/* MAIN HEADER */
+
 .content_main_card-header {
-    background-color: grey;
+
 }
 
 .content_main_card-header-title {
-
+    font-size: xx-large;
 }
 
 .content_main_card-header-desc {
-
+    font-size: small;
 }
+
+/* MAIN BODY */
 
 .content_main_card-body {
-    background-color: hotpink;
+    margin: 20px 0px;
+    background: rgb(9,85,121);
+    background: linear-gradient(90deg, rgba(9,85,121,1) 0%, rgba(72,78,96,0.5830707282913166) 90%, rgba(73,102,112,0.7511379551820728) 100%);
 }
+
+.content_main_card-body-playlist {
+    margin: 20px;
+    display: flex;
+}
+
+.content_main_card-body-playlist-art {
+    display: flex;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.content_main_card-body-playlist-songs {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.content_main_card-body-playlist-song {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0px;
+    border-bottom: solid 1px rgb(185, 169, 169);
+}
+
+.content_main_card-body-playlist-song-title {
+}
+
+.content_main_card-body-playlist-song-plays {
+    display: flex;
+    align-items: top;
+
+}
+
+.content_main_card-body-playlist-song-plays-icon {
+    padding-right: 5px;
+}
+
+ /* MAIN FOOTER */
+
 .content_main_card-footer {
-    background-color: rgb(177, 136, 219);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_main_card-footer-left {
+    display: flex;
+    align-items: center;
+
+}
+
+.content_main_card-footer-avatar {
+    padding-right: 10px;
+}
+
+.content_main_card-footer-subtitle {
+
+}
+
+.content_main_card-footer-link {
+    border: 1px solid rgb(141, 138, 138);
+    padding: 5px 10px;
+    font-size: small;
 }
 
 /* SIDEBAR CONTENT */
@@ -127,7 +212,7 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px 30px;
 }
 
 .content_sidebar_card-header {
