@@ -7,9 +7,19 @@ body {
 * {
   /* border: 1px rgb(146, 125, 125) solid; */
   /* text-align: center; */
- 
+
   font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+
 
 .text-color1 {
     color: rgb(34, 32, 32);
@@ -27,6 +37,11 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 100px;
+}
+
+.invert {
+    -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+    filter: invert(100%);
 }
 
 /* HEADER */
@@ -47,18 +62,67 @@ header {
 
 .nav_left {
     display: flex;
+    flex: 1;
     align-items: center;
 }
+
+.nav_left-logo {
+    height: 46px;
+    display: flex;
+    flex: 0.5;
+    background-color: rgb(243, 90, 1);
+    justify-content: center;
+    align-self: center;
+}
+
+.nav_left-links {
+    display: flex;
+    flex: 2;
+}
+
+.nav_left-link {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    border-right: black 1px solid;
+}
+
 
 /* HEADER MIDDLE */
 
 .nav_middle {
     display: flex;
-    align-items: center;
+    flex: 1;
+    padding: 0px 10px;
 }
 
 .nav_middle-search {
     display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.nav_middle-input {
+    display: flex;
+    flex: 3;
+    justify-content: stretch;
+}
+
+.nav_middle-input > input {
+    width: 100%;
+}
+
+.nav_middle-button {
+    display: flex;
+    flex: .5;
+    justify-content: center;
+}
+
+.nav_middle-button > button {
+    width: 100%;
+}
+
+.nav_middle-button img {
     align-items: center;
 }
 
@@ -66,22 +130,47 @@ header {
 
 .nav_right {
     display: flex;
+    flex: 1;
     align-items: center;
 }
 
 .nav_right-links {
     display: flex;
+    flex: 1;
     align-items: center;
+}
+
+.nav_right-link {
+    display: flex;
+    flex: 1;
 }
 
 .nav_right-user {
     display: flex;
+    flex: 1;
     align-items: center;
+}
+
+.nav_right-user div {
+    display: flex;
+    flex 1;
+}
+
+.nav_right-user img {
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
 }
 
 .nav_right-buttons {
     display: flex;
-    align-items: center;    
+    flex: 1;
+    align-items: center;
+}
+
+.nav_right-buttons > div {
+    display: flex;
+    flex: 1;
 }
 
 /* MAIN */
@@ -104,7 +193,7 @@ main {
 }
 
 .content_main_card {
-    border-bottom: rgb(88, 86, 86) 2px solid;
+    border-bottom: rgb(206, 182, 182) 1px solid;
     margin: 20px 30px;
     display: flex;
     flex: 1;
@@ -155,6 +244,7 @@ main {
     justify-content: space-between;
     padding: 4px 0px;
     border-bottom: solid 1px rgb(185, 169, 169);
+    font-size: smaller;
 }
 
 .content_main_card-body-playlist-song-title {
@@ -168,6 +258,10 @@ main {
 
 .content_main_card-body-playlist-song-plays-icon {
     padding-right: 5px;
+}
+
+.content_main_card-body-playlist-song-plays-count{
+
 }
 
  /* MAIN FOOTER */
@@ -205,7 +299,7 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    border-left: 2px rgb(146, 145, 145) solid;
+    border-left: 1px rgb(202, 189, 189) solid;
 }
 
 .content_sidebar_card {
