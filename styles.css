@@ -190,14 +190,15 @@ main {
     display: flex;
     flex: 2;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .content_main_card {
     border-bottom: rgb(206, 182, 182) 1px solid;
     margin: 20px 30px;
     display: flex;
-    flex: 1;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 /* MAIN HEADER */
@@ -455,7 +456,7 @@ main {
 }
 
 .content_sidebar_recommended-follow-icon {
-
+    border: 1px;
 }
 
 .content_sidebar_recommended-follow-text {
