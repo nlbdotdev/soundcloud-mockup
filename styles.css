@@ -216,6 +216,11 @@ main {
 
 /* MAIN BODY */
 
+.content_main {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .content_main_card-body {
     margin: 20px 0px;
     background: rgb(9,85,121);
@@ -300,6 +305,7 @@ main {
     flex: 1;
     flex-direction: column;
     border-left: 1px rgb(202, 189, 189) solid;
+    justify-content: flex-start;
 }
 
 .content_sidebar a:hover{
@@ -308,9 +314,9 @@ main {
 
 .content_sidebar_card {
     display: flex;
-    flex: 1;
     flex-direction: column;
     margin: 20px 30px;
+    justify-content: flex-start;
 }
 
 .content_sidebar_card-header {
@@ -343,6 +349,8 @@ main {
 
 }
 
+/* SIDEBAR FOLLOWING */
+
 .content_sidebar_following {
     display: flex;
 
@@ -364,4 +372,92 @@ main {
 .content_sidebar_following div {
     max-width: 100%;
     align-self: center;
+}
+
+/* SIDEBAR RECOMMENDED ARTIST */
+
+.content_sidebar_recommended div {
+    /* border: black 1px solid; */
+}
+
+.content_sidebar_recommended img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.content_sidebar_recommended {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.content_sidebar_recommended-card {
+    display: flex;
+}
+
+.content_sidebar_recommended-card > div {
+    padding: 5px;
+}
+
+
+.content_sidebar_recommended-card-avatar {
+    flex: 1;
+}
+
+.content_sidebar_recommended-card-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content_sidebar_recommended-card-info-title {
+    font-size: 90%;
+}
+
+.content_sidebar_recommended-card-info-subtitle {
+    display: flex;
+}
+  
+.content_sidebar_recommended-card-info-followers {
+    display: flex;
+    padding-right: 15px;
+}
+
+.content_sidebar_recommended-card-info-followers-icon {
+    margin-right: 4px;
+}
+
+.content_sidebar_recommended-card-info-followers-count {
+    font-size: smaller;
+}
+
+.content_sidebar_recommended-card-info-tracks {
+    display: flex;
+}
+
+.content_sidebar_recommended-card-info-tracks-icon {
+    margin-right: 4px;
+}
+
+.content_sidebar_recommended-card-info-tracks-count {
+    font-size: smaller;
+}
+
+.content_sidebar_recommended-follow {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_sidebar_recommended-follow-icon {
+
+}
+
+.content_sidebar_recommended-follow-text {
+    font-size: smaller;
 }
